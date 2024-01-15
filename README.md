@@ -9,8 +9,8 @@ A simple command-line tool that retains the main feature of the linux `watch` co
   The default behavior of `watch` in such cases is to keep only the characters that will fit into the screen
   while discarding the rest, which isn't ideal for all cases. `watching` circumvents that by retaining all 
   characters of the output of the command and allowing you to scroll through them. 
-  
-  https://github.com/anthony-S93/watching/assets/69449791/3306e80f-13c8-4745-ab6f-028a04f79528
+
+  https://github.com/anthony-S93/watching/assets/69449791/7a303ebf-9573-4bc9-89ef-5e7e1604f974
 
   Vim-style scrolling is supported: to scroll down, press `j`; to scroll up, press `k`  
 
@@ -34,6 +34,19 @@ Python 3.60+
 ```text
 watching [{-n | --interval} <time_seconds>] [{-h | --help}] [{-w | --no-wrap}] [{-t | --no-title}] <cmd> [args]
 ```
+### Options
+- `-n`, `--interval`
+
+  The watch interval. Takes precedence over the `WATCH_INTERVAL` environment variable.
+- `-w`, `--no-wrap`
+
+  Turn off line wrapping. Long lines will be truncated instead of wrapped to the next line.
+
+- `-t`, `--no-title`
+
+  Turn off the heading normally shown at the top of the screen.
+
+   
 ### Key Controls
 - `j` to scroll down
 - `k` to scroll up
@@ -49,11 +62,13 @@ The behavior of `watching` is affected by the following environment variables:
 ## Examples
 ### Monitor the changes in a file
 
-https://github.com/anthony-S93/watching/assets/69449791/ef38fa10-fb43-4d0e-8506-b17a45681bf6
+https://github.com/anthony-S93/watching/assets/69449791/b1ce407c-25b2-4452-a7b4-76b92d2e7afb
 
 ### Monitor the changes in command ouput
 
-https://github.com/anthony-S93/watching/assets/69449791/21fc2fe4-f4e0-4669-93d4-3b2471b0ceef
+https://github.com/anthony-S93/watching/assets/69449791/95d97c94-2250-4feb-ab07-1f1185fa4798
+
+
 
 
 
