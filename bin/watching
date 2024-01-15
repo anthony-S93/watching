@@ -1,0 +1,7 @@
+#!/bin/sh
+
+LAUNCHER_SCRIPT="$(readlink -f "$0")"
+BIN_DIRECTORY="$(dirname "$LAUNCHER_SCRIPT")"
+PACKAGE_DIRECTORY="$(dirname "$BIN_DIRECTORY")"
+
+python "$PACKAGE_DIRECTORY/src/main.py" "$@"
