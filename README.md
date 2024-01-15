@@ -9,8 +9,8 @@ A simple command-line tool that retains the main feature of the linux `watch` co
   The default behavior of `watch` in such cases is to keep only the characters that will fit into the screen
   while discarding the rest, which isn't ideal for all cases. `watching` circumvents that by retaining all 
   characters of the output of the command and allowing you to scroll through them. 
-
-  https://github.com/anthony-S93/watching/assets/69449791/7a303ebf-9573-4bc9-89ef-5e7e1604f974
+  
+  https://github.com/anthony-S93/watching/assets/69449791/62bc2144-3174-46ae-abf4-0f2bcdd19df9
 
   Vim-style scrolling is supported: to scroll down, press `j`; to scroll up, press `k`  
 
@@ -62,11 +62,12 @@ The behavior of `watching` is affected by the following environment variables:
 ## Examples
 ### Monitor the changes in a file
 
-https://github.com/anthony-S93/watching/assets/69449791/b1ce407c-25b2-4452-a7b4-76b92d2e7afb
+https://github.com/anthony-S93/watching/assets/69449791/40e28fdb-8cec-4f01-83e8-0e812b7d6ffc
 
 ### Monitor the changes in command ouput
 
-https://github.com/anthony-S93/watching/assets/69449791/95d97c94-2250-4feb-ab07-1f1185fa4798
+https://github.com/anthony-S93/watching/assets/69449791/c66a7fda-6c81-43bf-afb2-79f9e9ff92da
+
 
 
 
