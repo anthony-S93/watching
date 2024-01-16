@@ -9,4 +9,4 @@ _watching_completion() {
     esac
 }
 
-complete -F _watching_completion watching
+complete -o nosort -F _watching_completion watching
