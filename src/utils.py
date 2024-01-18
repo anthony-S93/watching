@@ -83,8 +83,8 @@ class Session:
                     raise Exception()
         except Exception:
             self.deactivate()
-            self.__content_pad.addstr(0, 0, f"Something went wrong.\nThe command has a non-zero exit code.\nPress 'q' to quit.")
             self.__content_pad.erase() # Clear previous contents
+            self.__content_pad.addstr(0, 0, f"Something went wrong. The command has a non-zero exit code.\nPress 'q' to quit.")
             self.refresh_screen()
 
     @staticmethod
