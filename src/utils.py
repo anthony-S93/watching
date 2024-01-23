@@ -4,6 +4,10 @@ import textwrap
 import subprocess
 from typing import List
 
+# 10000 x 300 should be enough for most use cases
+MAX_LINES = 10000
+MAX_COLS  = 300
+
 
 class Session:
     def __init__(self, cmd: List[str], interval: float, *, no_title=False, wrap=True) -> None:
@@ -22,7 +26,7 @@ class Session:
         curses.curs_set(0) # Hide cursor
 
         # Create a pad large enough to hold all contents
-        self.__content_pad = curses.newpad(1000, 1000) # 1000 x 1000 should be enough for most use cases
+        self.__content_pad = curses.newpad(MAX_LINES, MAX_COLS)
 
         if not self.__no_title:
             # Create a pad to hold the heading
