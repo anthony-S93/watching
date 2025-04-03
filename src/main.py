@@ -7,7 +7,7 @@ from utils import *
 WATCH_INTERVAL = 2.0
 LINE_WRAPPING = True
 NO_TITLE = False
-USAGE = "Usage: pywatch [{-n | --interval} <time_seconds>] [{-h | --help}] [{-w | --no-wrap}] [{-t | --no-title}] <cmd> [args]\n"
+USAGE = "Usage: watching [{-n | --interval} <time_seconds>] [{-h | --help}] [{-w | --no-wrap}] [{-t | --no-title}] <cmd> [args]\n"
 
 # Look for WATCH_INTERVAL in environment
 if "WATCH_INTERVAL" in os.environ:
